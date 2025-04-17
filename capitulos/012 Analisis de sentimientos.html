@@ -1,0 +1,212 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Inter', Helvetica, Arial, sans-serif;
+                    font-size: 20px;
+                    margin: 20px;
+                    line-height: 1.6;
+                }
+                
+                ul, li {
+                    font-family: 'Inter', Helvetica, Arial, sans-serif;
+                }
+                
+                h4{
+                font-family: 'Inter', Helvetica, Arial, sans-serif;
+                }
+                
+              table {
+                width: 60%;
+                border-collapse: collapse;
+                margin: 20px auto;
+                font-family: 'Inter', Helvetica, Arial, sans-serif;
+              }
+
+              th, td {
+                border: 1px solid #ccc;
+                padding: 10px;
+                text-align: center;
+              }
+
+              thead {
+                background-color: #4CAF50;
+                color: white;
+              }
+
+              tr:nth-child(even){
+                background-color: #f2f2f2;
+              }
+
+              tr:hover {
+                background-color: #ddd;
+              }
+            </style>
+        </head>
+        <body>
+            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'MS Shell Dlg 2'; font-size:8.15094pt; font-weight:400; font-style:normal;">
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Análisis de Sentimientos: Una Herramienta Poderosa para Comprender las Emociones en los Datos</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">El </span><span style=" font-size:20pt; font-weight:600;">análisis de sentimientos</span><span style=" font-size:20pt;"> es una </span><span style=" font-size:20pt; font-weight:600;">técnica de procesamiento de lenguaje natural (NLP)</span><span style=" font-size:20pt;"> que se utiliza para determinar la </span><span style=" font-size:20pt; font-weight:600;">opinión</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">emociones</span><span style=" font-size:20pt;"> o </span><span style=" font-size:20pt; font-weight:600;">actitudes</span><span style=" font-size:20pt;"> expresadas en un texto. Este proceso es crucial para </span><span style=" font-size:20pt; font-weight:600;">empresas</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">investigadores</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">desarrolladores</span><span style=" font-size:20pt;"> que desean entender las </span><span style=" font-size:20pt; font-weight:600;">emociones</span><span style=" font-size:20pt;"> de los usuarios, clientes o cualquier grupo de personas a partir de sus mensajes.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">🔍 </span><span style=" font-size:20pt; font-weight:600;">¿Qué es el Análisis de Sentimientos?</span><span style=" font-size:20pt;"><br />El análisis de sentimientos implica identificar y clasificar los sentimientos en un texto como </span><span style=" font-size:20pt; font-weight:600;">positivos</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">negativos</span><span style=" font-size:20pt;"> o </span><span style=" font-size:20pt; font-weight:600;">neutrales</span><span style=" font-size:20pt;">. Se puede aplicar a una variedad de fuentes de datos como </span><span style=" font-size:20pt; font-weight:600;">comentarios en redes sociales</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">reseñas de productos</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">encuestas</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">opiniones de clientes</span><span style=" font-size:20pt;">.</span></p>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Tipos de Sentimientos 🌈</span></h3>
+<ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Sentimiento Positivo</span> 😊</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Ejemplo: &quot;¡Este producto es increíble! Me encantó, 100% recomendado.&quot;</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Palabras clave: <span style=" font-weight:600;">increíble</span>, <span style=" font-weight:600;">me encantó</span>, <span style=" font-weight:600;">recomendado</span>.</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Sentimiento Negativo</span> 😞</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Ejemplo: &quot;La experiencia fue horrible, no me gustó nada.&quot;</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Palabras clave: <span style=" font-weight:600;">horrible</span>, <span style=" font-weight:600;">no me gustó</span>, <span style=" font-weight:600;">nada</span>.</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Sentimiento Neutral</span> 😐</li></ol>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Ejemplo: &quot;El producto es funcional, aunque no tiene nada especial.&quot;</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Palabras clave: <span style=" font-weight:600;">funcional</span>, <span style=" font-weight:600;">nada especial</span>.</li></ul>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Aplicaciones del Análisis de Sentimientos 🚀</span></h3>
+<ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Atención al Cliente</span> 📞</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Ayuda a <span style=" font-weight:600;">monitorear</span> y <span style=" font-weight:600;">analizar</span> las interacciones de los clientes para <span style=" font-weight:600;">mejorar</span> el servicio.</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Marketing</span> 📈</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Permite entender cómo los consumidores perciben las <span style=" font-weight:600;">campañas</span> publicitarias o <span style=" font-weight:600;">lanzamientos</span> de productos.</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Política y Opinión Pública</span> 🗳️</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Analiza las <span style=" font-weight:600;">opiniones</span> de la gente sobre temas políticos o sociales.</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Desarrollo de Productos</span> 🛠️</li></ol>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Las empresas pueden ajustar sus productos según las <span style=" font-weight:600;">reacciones</span> y <span style=" font-weight:600;">sentimientos</span> de los usuarios.</li></ul>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Herramientas para el Análisis de Sentimientos 🛠️</span></h3>
+<ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">VADER (Valence Aware Dictionary and sEntiment Reasoner)</span> 🌐</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Un <span style=" font-weight:600;">algoritmo</span> basado en reglas para el análisis de sentimientos que se utiliza principalmente en <span style=" font-weight:600;">redes sociales</span>.</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">TextBlob</span> 📝</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Librería</span> de Python que ofrece una forma sencilla de realizar análisis de sentimientos.</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Sentiment140</span> 😎</li></ol>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Un <span style=" font-weight:600;">conjunto de datos</span> que se utiliza para entrenar modelos de análisis de sentimientos, especialmente en <span style=" font-weight:600;">tuits</span>.</li></ul>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Métodos de Análisis 🔍</span></h3>
+<ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Análisis de Polaridad</span> 🧭</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Este enfoque mide el <span style=" font-weight:600;">grado</span> de polaridad en el texto, es decir, si el sentimiento es <span style=" font-weight:600;">positivo</span> o <span style=" font-weight:600;">negativo</span>. Se puede representar con una escala de <span style=" font-weight:600;">-1</span> (muy negativo) a <span style=" font-weight:600;">+1</span> (muy positivo).</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Análisis de Subjetividad</span> 💭</li></ol>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Determina si el texto expresa una <span style=" font-weight:600;">opinión</span> subjetiva o es más <span style=" font-weight:600;">objetivo</span>. Ejemplo: &quot;Creo que este libro es excelente&quot; vs. &quot;Este libro tiene 300 páginas.&quot;</li></ul>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Desafíos del Análisis de Sentimientos ⚠️</span></h3>
+<ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Sarcasmo</span> 🙃</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">El sarcasmo puede ser difícil de detectar y puede <span style=" font-weight:600;">alterar</span> la interpretación del sentimiento en un texto.</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Contexto</span> 🧠</li>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">El contexto juega un papel fundamental en el análisis. Una palabra puede tener diferentes significados dependiendo del contexto.</li></ul>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Lenguaje Complejo</span> 🧩</li></ol>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Los textos con <span style=" font-weight:600;">jerga</span>, <span style=" font-weight:600;">abreviaturas</span> o <span style=" font-weight:600;">errores gramaticales</span> pueden dificultar la tarea de clasificar correctamente el sentimiento.</li></ul>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Ejemplo de Análisis de Sentimientos en Python 🐍</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Aquí tienes un ejemplo simple utilizando la librería </span><span style=" font-size:20pt; font-weight:600;">TextBlob</span><span style=" font-size:20pt;">:</span></p>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; font-size:20pt;">python</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; font-size:20pt;">CopyEdit</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; font-size:20pt;">from textblob import TextBlob</span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New'; font-size:20pt;"><br /></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; font-size:20pt;"># Crear un objeto TextBlob con una oración</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; font-size:20pt;">texto = TextBlob(&quot;¡Me encanta este teléfono! Es increíblemente rápido.&quot;)</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; font-size:20pt;"># Analizar el sentimiento</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; font-size:20pt;">sentimiento = texto.sentiment</span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New'; font-size:20pt;"><br /></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; font-size:20pt;"># Mostrar el análisis</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; font-size:20pt;">print(f&quot;Polaridad: {sentimiento.polarity}, Subjetividad: {sentimiento.subjectivity}&quot;)</span></pre>
+<pre style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New'; font-size:20pt;"><br /></pre>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Polaridad</span>: mide el sentimiento (positivo o negativo).</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Subjetividad</span>: mide cuán subjetivo u objetivo es el texto.</li></ul>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Conclusión 🏁</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">El </span><span style=" font-size:20pt; font-weight:600;">análisis de sentimientos</span><span style=" font-size:20pt;"> es una herramienta poderosa para interpretar y comprender las emociones en grandes volúmenes de datos textuales. Ya sea para mejorar la </span><span style=" font-size:20pt; font-weight:600;">atención al cliente</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">estrategias de marketing</span><span style=" font-size:20pt;"> o la </span><span style=" font-size:20pt; font-weight:600;">opinión pública</span><span style=" font-size:20pt;">, esta técnica continúa evolucionando y desempeña un papel crucial en la </span><span style=" font-size:20pt; font-weight:600;">inteligencia artificial</span><span style=" font-size:20pt;">.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Usar este tipo de análisis nos permite tomar </span><span style=" font-size:20pt; font-weight:600;">decisiones informadas</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">ajustar estrategias</span><span style=" font-size:20pt;"> en tiempo real para satisfacer mejor a los usuarios y mejorar servicios. 🎯</span></p></body></html>
+        </body>
+        </html>
+        
+<style>
+.floating-back-button {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.floating-back-button:hover {
+    background-color: #e85a4f;
+}
+.floating-back-button svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+</style>
+
+<a href="../index.html" class="floating-back-button" title="Volver al inicio">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+</a>
+
+<style>
+.floating-back-button {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.floating-back-button:hover {
+    background-color: #e85a4f;
+}
+.floating-back-button svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+</style>
+
+<a href="../index.html" class="floating-back-button" title="Volver al inicio">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+</a>
+
+<style>
+.floating-back-button {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.floating-back-button:hover {
+    background-color: #e85a4f;
+}
+.floating-back-button svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+</style>
+
+<a href="../index.html" class="floating-back-button" title="Volver al inicio">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+</a>

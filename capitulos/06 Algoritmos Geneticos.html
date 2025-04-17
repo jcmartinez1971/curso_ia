@@ -1,0 +1,319 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Inter', Helvetica, Arial, sans-serif;
+                    font-size: 20px;
+                    margin: 20px;
+                    line-height: 1.6;
+                }
+                
+                ul, li {
+                    font-family: 'Inter', Helvetica, Arial, sans-serif;
+                }
+                
+                h4{
+                font-family: 'Inter', Helvetica, Arial, sans-serif;
+                }
+                
+              table {
+                width: 60%;
+                border-collapse: collapse;
+                margin: 20px auto;
+                font-family: 'Inter', Helvetica, Arial, sans-serif;
+              }
+
+              th, td {
+                border: 1px solid #ccc;
+                padding: 10px;
+                text-align: center;
+              }
+
+              thead {
+                background-color: #4CAF50;
+                color: white;
+              }
+
+              tr:nth-child(even){
+                background-color: #f2f2f2;
+              }
+
+              tr:hover {
+                background-color: #ddd;
+              }
+            </style>
+        </head>
+        <body>
+            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'MS Shell Dlg 2'; font-size:8.15094pt; font-weight:400; font-style:normal;">
+<h1 style=" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">🌱 Algoritmos Genéticos 🧬</span></h1>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Los </span><span style=" font-size:20pt; font-weight:600;">algoritmos genéticos (AG)</span><span style=" font-size:20pt;"> son un tipo de </span><span style=" font-size:20pt; font-weight:600;">algoritmo de optimización</span><span style=" font-size:20pt;"> que se inspiran en los principios de la </span><span style=" font-size:20pt; font-weight:600;">evolución natural</span><span style=" font-size:20pt;">. Son utilizados para encontrar soluciones a problemas complejos, donde las soluciones exactas no siempre son posibles o eficientes de obtener.</span></p>
+<h2 style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">1. 🔍 ¿Qué Son los Algoritmos Genéticos?</span></h2>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Los </span><span style=" font-size:20pt; font-weight:600;">algoritmos genéticos</span><span style=" font-size:20pt;"> son métodos de </span><span style=" font-size:20pt; font-weight:600;">búsqueda</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">optimización</span><span style=" font-size:20pt;"> basados en la </span><span style=" font-size:20pt; font-weight:600;">selección natural</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">genética</span><span style=" font-size:20pt;">. Funcionan mediante una simulación de </span><span style=" font-size:20pt; font-weight:600;">evolución biológica</span><span style=" font-size:20pt;">, donde las </span><span style=" font-size:20pt; font-weight:600;">soluciones posibles</span><span style=" font-size:20pt;"> se combinan, mutan y evolucionan para encontrar la mejor solución.</span></p>
+<h2 style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">2. 🧬 Componentes Principales de un Algoritmo Genético</span></h2>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">🧠 1. Población (Population)</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Una </span><span style=" font-size:20pt; font-weight:600;">población</span><span style=" font-size:20pt;"> es un conjunto de </span><span style=" font-size:20pt; font-weight:600;">soluciones posibles</span><span style=" font-size:20pt;"> (también llamadas individuos o cromosomas) que representan las distintas posibles soluciones al problema.</span></p>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">⚡ 2. Cromósomos (Chromosomes)</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Cada </span><span style=" font-size:20pt; font-weight:600;">cromosoma</span><span style=" font-size:20pt;"> es una representación de una </span><span style=" font-size:20pt; font-weight:600;">solución potencial</span><span style=" font-size:20pt;">. Generalmente, se representa como una </span><span style=" font-size:20pt; font-weight:600;">cadena de bits</span><span style=" font-size:20pt;"> o </span><span style=" font-size:20pt; font-weight:600;">números</span><span style=" font-size:20pt;">.</span></p>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">🏋️‍♂️ 3. Aptitud (Fitness)</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">La </span><span style=" font-size:20pt; font-weight:600;">aptitud</span><span style=" font-size:20pt;"> evalúa qué tan buena es una </span><span style=" font-size:20pt; font-weight:600;">solución</span><span style=" font-size:20pt;">. Cuanto mayor sea la </span><span style=" font-size:20pt; font-weight:600;">aptitud</span><span style=" font-size:20pt;">, mejor es la </span><span style=" font-size:20pt; font-weight:600;">solución</span><span style=" font-size:20pt;"> al problema.</span></p>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">🔄 4. Selección (Selection)</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">El proceso de </span><span style=" font-size:20pt; font-weight:600;">selección</span><span style=" font-size:20pt;"> consiste en elegir los mejores cromosomas (individuos) para que participen en la </span><span style=" font-size:20pt; font-weight:600;">reproducción</span><span style=" font-size:20pt;">. Los cromosomas con </span><span style=" font-size:20pt; font-weight:600;">mayor aptitud</span><span style=" font-size:20pt;"> tienen más probabilidad de ser seleccionados.</span></p>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">✂️ 5. Cruce (Crossover)</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">El </span><span style=" font-size:20pt; font-weight:600;">cruce</span><span style=" font-size:20pt;"> es el proceso en el que dos </span><span style=" font-size:20pt; font-weight:600;">cromosomas</span><span style=" font-size:20pt;"> se combinan para crear </span><span style=" font-size:20pt; font-weight:600;">descendencia</span><span style=" font-size:20pt;">. De esta manera, los </span><span style=" font-size:20pt; font-weight:600;">atributos</span><span style=" font-size:20pt;"> de los padres se mezclan para generar nuevas soluciones.</span></p>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">🧬 6. Mutación (Mutation)</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">La </span><span style=" font-size:20pt; font-weight:600;">mutación</span><span style=" font-size:20pt;"> introduce cambios aleatorios en un cromosoma. Este proceso asegura que el algoritmo no se quede atrapado en un </span><span style=" font-size:20pt; font-weight:600;">mínimo local</span><span style=" font-size:20pt;"> y explore nuevas soluciones.</span></p>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">🔁 7. Reemplazo (Replacement)</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Una vez generados los nuevos cromosomas a través de </span><span style=" font-size:20pt; font-weight:600;">cruce</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">mutación</span><span style=" font-size:20pt;">, se reemplazan los cromosomas de la </span><span style=" font-size:20pt; font-weight:600;">población</span><span style=" font-size:20pt;"> con los mejores individuos de la </span><span style=" font-size:20pt; font-weight:600;">generación anterior</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">nueva generación</span><span style=" font-size:20pt;">.</span></p>
+<h2 style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">3. 💡 Pasos de un Algoritmo Genético</span></h2>
+<ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Inicialización de la población</span>: Generar una población inicial de cromosomas (soluciones) aleatorias.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Evaluación de aptitud</span>: Calcular la <span style=" font-weight:600;">aptitud</span> de cada cromosoma en la población.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Selección</span>: Elegir los mejores cromosomas para la reproducción.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Cruce y mutación</span>: Combinar cromosomas seleccionados y aplicar mutaciones.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Reemplazo</span>: Seleccionar la mejor población para la siguiente iteración.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Repetir</span>: Continuar el proceso hasta alcanzar una <span style=" font-weight:600;">solución óptima</span> o un <span style=" font-weight:600;">número máximo de generaciones</span>.</li></ol>
+<h2 style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">4. 🌍 Aplicaciones de los Algoritmos Genéticos</span></h2>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Los </span><span style=" font-size:20pt; font-weight:600;">algoritmos genéticos</span><span style=" font-size:20pt;"> se aplican en una variedad de campos, entre ellos:</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Optimización de rutas</span> 🛣️: Encontrar la mejor ruta en problemas como el <span style=" font-weight:600;">viaje del vendedor</span>.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Diseño de redes neuronales</span> 🧠: Ajustar los pesos de una red neuronal.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Automatización</span> ⚙️: Crear máquinas que se autoajustan.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Juegos y simulaciones</span> 🎮: Generación de comportamientos complejos.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Desarrollo de medicamentos</span> 💊: Optimización de moléculas para encontrar compuestos útiles.</li></ul>
+<h2 style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">5. 🚀 Ventajas y Desventajas</span></h2>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">✅ Ventajas</span></h3>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Exploración global</span> 🌎: No se quedan atrapados en mínimos locales.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Flexibilidad</span> 🔄: Se pueden aplicar a una amplia gama de problemas.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Adaptabilidad</span> 🔧: Los algoritmos mejoran con cada iteración.</li></ul>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">❌ Desventajas</span></h3>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Costo computacional</span> 💻: Los algoritmos pueden ser lentos, especialmente con poblaciones grandes.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">No siempre garantizan la mejor solución</span> ❓: Pueden no converger a la solución óptima, solo a una aproximación.</li></ul>
+<hr />
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Problema: Maximizar la función de ajuste</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Queremos encontrar el valor de </span><span style=" font-size:20pt; font-weight:600;">x</span><span style=" font-size:20pt;"> que maximiza la siguiente función:</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">f(x)=x2f(x) = x^2f(x)=x2</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">El objetivo es encontrar el valor de </span><span style=" font-size:20pt; font-weight:600;">x</span><span style=" font-size:20pt;"> que da el mayor valor de </span><span style=" font-size:20pt; font-weight:600;">f(x)</span><span style=" font-size:20pt;"> dentro de un rango dado (por ejemplo, entre 0 y 31).</span></p>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Pasos del Algoritmo Genético 🧬</span></h3>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">1. Representación de las soluciones (Cromosomas)</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Primero, representamos </span><span style=" font-size:20pt; font-weight:600;">x</span><span style=" font-size:20pt;"> como un número binario (cromosoma). Usaremos un </span><span style=" font-size:20pt; font-weight:600;">cromosoma de 5 bits</span><span style=" font-size:20pt;"> para representar el número </span><span style=" font-size:20pt; font-weight:600;">x</span><span style=" font-size:20pt;">.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Por ejemplo:</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">00000 → <span style=" font-weight:600;">x = 0</span></li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">11111 → <span style=" font-weight:600;">x = 31</span></li></ul>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">2. Población inicial</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Generamos una </span><span style=" font-size:20pt; font-weight:600;">población inicial</span><span style=" font-size:20pt;"> aleatoria de </span><span style=" font-size:20pt; font-weight:600;">cromosomas</span><span style=" font-size:20pt;">.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Supongamos que generamos estos cromosomas iniciales:</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">01011 → <span style=" font-weight:600;">x = 11</span></li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">11100 → <span style=" font-weight:600;">x = 28</span></li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">00001 → <span style=" font-weight:600;">x = 1</span></li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">10101 → <span style=" font-weight:600;">x = 21</span></li></ul>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">3. Evaluación de aptitud</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Calculamos la </span><span style=" font-size:20pt; font-weight:600;">aptitud</span><span style=" font-size:20pt;"> de cada cromosoma usando la función </span><span style=" font-size:20pt; font-weight:600;">f(x) = x^2</span><span style=" font-size:20pt;">. La aptitud es el valor de la función para el valor de </span><span style=" font-size:20pt; font-weight:600;">x</span><span style=" font-size:20pt;"> representado por el cromosoma.</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20pt;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0"><thead>
+<tr>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Cromosoma</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">x</span></p></td>
+<td>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">f(x) (aptitud)</span></p></td></tr></thead>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">01011</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">11</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">121</span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">11100</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">28</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">784</span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">00001</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">1</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">1</span></p></td></tr>
+<tr>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">10101</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">21</span></p></td>
+<td>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">441</span></p></td></tr></table>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">4. Selección</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Seleccionamos los cromosomas con mayor </span><span style=" font-size:20pt; font-weight:600;">aptitud</span><span style=" font-size:20pt;"> para crear nuevos cromosomas. Usaremos el </span><span style=" font-size:20pt; font-weight:600;">torneo de selección</span><span style=" font-size:20pt;">: seleccionamos dos cromosomas al azar y elegimos el que tenga mejor aptitud.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Supongamos que seleccionamos los cromosomas </span><span style=" font-size:20pt; font-weight:600;">11100</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">10101</span><span style=" font-size:20pt;"> (aptitudes 784 y 441 respectivamente).</span></p>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">5. Cruce (Crossover)</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Aplicamos el </span><span style=" font-size:20pt; font-weight:600;">cruce</span><span style=" font-size:20pt;"> para combinar los dos cromosomas seleccionados. Vamos a dividir cada cromosoma en dos partes y hacer un cruce.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Ejemplo de cruce de un punto en el medio:</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">11100 → <span style=" font-weight:600;">28</span></li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">10101 → <span style=" font-weight:600;">21</span></li></ul>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Cruce de punto medio → </span><span style=" font-size:20pt; font-weight:600;">11101</span><span style=" font-size:20pt;"> (de 11100) y </span><span style=" font-size:20pt; font-weight:600;">10100</span><span style=" font-size:20pt;"> (de 10101).</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Los nuevos cromosomas serían:</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">11101</span> → <span style=" font-weight:600;">x = 29</span></li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">10100</span> → <span style=" font-weight:600;">x = 20</span></li></ul>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">6. Mutación</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Introducimos una pequeña </span><span style=" font-size:20pt; font-weight:600;">mutación</span><span style=" font-size:20pt;"> para explorar nuevas soluciones. Por ejemplo, cambiamos el último bit del cromosoma </span><span style=" font-size:20pt; font-weight:600;">11101</span><span style=" font-size:20pt;">.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Nuevo cromosoma: </span><span style=" font-size:20pt; font-weight:600;">11100</span><span style=" font-size:20pt;"> → </span><span style=" font-size:20pt; font-weight:600;">x = 28</span><span style=" font-size:20pt;">.</span></p>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">7. Reemplazo</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Sustituimos a los cromosomas menos aptos por los nuevos generados. En este caso, los cromosomas </span><span style=" font-size:20pt; font-weight:600;">11100</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">10100</span><span style=" font-size:20pt;"> reemplazarían a los peores cromosomas de la población.</span></p>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">8. Repetir</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">El proceso se repite con las nuevas generaciones hasta que se alcanza un número de generaciones o se encuentra una solución satisfactoria.</span></p>
+<hr />
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Resultados</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Supongamos que después de varias generaciones, el algoritmo encuentra que el cromosoma </span><span style=" font-size:20pt; font-weight:600;">11100</span><span style=" font-size:20pt;"> (con </span><span style=" font-size:20pt; font-weight:600;">x = 28</span><span style=" font-size:20pt;">) da el valor más alto de </span><span style=" font-size:20pt; font-weight:600;">f(x)</span><span style=" font-size:20pt;">. Es decir, la solución óptima encontrada es </span><span style=" font-size:20pt; font-weight:600;">x = 28</span><span style=" font-size:20pt;">, que maximiza la función f(x)=x2f(x) = x^2f(x)=x2.</span></p>
+<hr />
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Este es un </span><span style=" font-size:20pt; font-weight:600;">ejemplo básico</span><span style=" font-size:20pt;"> de cómo los </span><span style=" font-size:20pt; font-weight:600;">algoritmos genéticos</span><span style=" font-size:20pt;"> pueden usarse para resolver problemas de optimización. El proceso de </span><span style=" font-size:20pt; font-weight:600;">selección</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">cruce</span><span style=" font-size:20pt;">, y </span><span style=" font-size:20pt; font-weight:600;">mutación</span><span style=" font-size:20pt;"> permite explorar soluciones potenciales de manera eficiente.</span></p>
+<h2 style="-qt-paragraph-type:empty; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20pt;"><br /></h2>
+<h2 style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">🧠 Aplicación: Optimización de Políticas Públicas para Reducir la Desigualdad Social 💡</span></h2>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Problema</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Imaginemos que un gobierno está tratando de diseñar un conjunto de políticas públicas que </span><span style=" font-size:20pt; font-weight:600;">reduzcan la desigualdad social</span><span style=" font-size:20pt;"> en una región. Este problema involucra múltiples factores, como el </span><span style=" font-size:20pt; font-weight:600;">nivel de educación</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">salud</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">empleo</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">ingresos</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">distribución de recursos</span><span style=" font-size:20pt;">. La </span><span style=" font-size:20pt; font-weight:600;">optimización</span><span style=" font-size:20pt;"> de estas políticas es un desafío complejo porque hay muchas variables y restricciones que deben ser consideradas simultáneamente.</span></p>
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Cómo se puede usar un Algoritmo Genético:</span></h3>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">1. Representación de soluciones (Cromosomas) 🧬</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Cada </span><span style=" font-size:20pt; font-weight:600;">cromosoma</span><span style=" font-size:20pt;"> representará un conjunto de </span><span style=" font-size:20pt; font-weight:600;">políticas públicas</span><span style=" font-size:20pt;"> posibles, donde cada bit o valor en el cromosoma representa una política en particular. Por ejemplo, podríamos tener 5 políticas para evaluar:</span></p>
+<ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Educación:</span> Aumento de la inversión en la educación.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Salud:</span> Subsidios para atención médica.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Empleo:</span> Programas de empleo y capacitación.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Vivienda:</span> Construcción de viviendas accesibles.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Transporte:</span> Mejora del transporte público.</li></ol>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Cada </span><span style=" font-size:20pt; font-weight:600;">cromosoma</span><span style=" font-size:20pt;"> puede ser un vector binario o numérico que represente diferentes combinaciones de estas políticas (por ejemplo, 1 para implementar la política y 0 para no implementarla).</span></p>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">2. Población Inicial 🧑‍🤝‍🧑</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Generamos una </span><span style=" font-size:20pt; font-weight:600;">población inicial</span><span style=" font-size:20pt;"> de </span><span style=" font-size:20pt; font-weight:600;">cromosomas</span><span style=" font-size:20pt;"> aleatorios. Cada cromosoma será un conjunto de políticas públicas diferentes. Por ejemplo:</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Cromosoma 1: [1, 0, 1, 1, 0] (Implementar educación, no salud, empleo, vivienda, no transporte).</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Cromosoma 2: [1, 1, 0, 1, 1] (Implementar educación, salud, no empleo, vivienda, transporte).</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Cromosoma 3: [0, 1, 1, 0, 1] (No educación, salud, empleo, no vivienda, transporte).</li></ul>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">3. Función de Aptitud (Fitness) 💪</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">La </span><span style=" font-size:20pt; font-weight:600;">aptitud</span><span style=" font-size:20pt;"> de cada cromosoma será determinada por el </span><span style=" font-size:20pt; font-weight:600;">impacto</span><span style=" font-size:20pt;"> que cada conjunto de políticas tiene sobre la reducción de la </span><span style=" font-size:20pt; font-weight:600;">desigualdad social</span><span style=" font-size:20pt;">. Esto puede medirse con indicadores como el </span><span style=" font-size:20pt; font-weight:600;">índice de Gini</span><span style=" font-size:20pt;"> (que mide la desigualdad), el </span><span style=" font-size:20pt; font-weight:600;">nivel de pobreza</span><span style=" font-size:20pt;"> o el </span><span style=" font-size:20pt; font-weight:600;">acceso a servicios básicos</span><span style=" font-size:20pt;">. Cuanto mayor sea la reducción de la desigualdad, mayor será la aptitud del cromosoma.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Por ejemplo, si un conjunto de políticas mejora considerablemente el acceso a la educación y el empleo, su aptitud será alta.</span></p>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">4. Selección 🎯</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Usamos el proceso de </span><span style=" font-size:20pt; font-weight:600;">selección</span><span style=" font-size:20pt;"> para elegir los cromosomas más aptos (aquellos con la mayor reducción de desigualdad social) para reproducir. La </span><span style=" font-size:20pt; font-weight:600;">selección por torneo</span><span style=" font-size:20pt;"> es una técnica común aquí, donde seleccionamos al azar dos cromosomas y elegimos el que tiene la mejor aptitud.</span></p>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">5. Cruce (Crossover) 🔄</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Aplicamos el </span><span style=" font-size:20pt; font-weight:600;">cruce</span><span style=" font-size:20pt;"> para generar nuevos cromosomas. Por ejemplo, si tenemos dos cromosomas:</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Cromosoma 1: [1, 0, 1, 1, 0]</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Cromosoma 2: [1, 1, 0, 1, 1]</li></ul>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Podemos hacer un cruce de punto medio:</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Cromosoma hijo 1: [1, 1, 1, 1, 0]</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Cromosoma hijo 2: [1, 0, 0, 1, 1]</li></ul>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">6. Mutación 🧬</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Para evitar caer en un </span><span style=" font-size:20pt; font-weight:600;">mínimo local</span><span style=" font-size:20pt;"> y explorar nuevas soluciones, introducimos </span><span style=" font-size:20pt; font-weight:600;">mutaciones</span><span style=" font-size:20pt;"> en los cromosomas. Por ejemplo, podemos cambiar un bit al azar, lo que representaría un cambio en la política de </span><span style=" font-size:20pt; font-weight:600;">salud</span><span style=" font-size:20pt;"> o </span><span style=" font-size:20pt; font-weight:600;">vivienda</span><span style=" font-size:20pt;">.</span></p>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">7. Reemplazo 🔁</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Los cromosomas menos aptos (es decir, aquellos que no logran reducir la desigualdad social de manera eficiente) son reemplazados por los nuevos cromosomas generados.</span></p>
+<h4 style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">8. Repetir 🔄</span></h4>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">El algoritmo continúa evolucionando la población hasta que alcanza una </span><span style=" font-size:20pt; font-weight:600;">solución óptima</span><span style=" font-size:20pt;"> o hasta que se cumplen ciertas condiciones (como un número máximo de generaciones).</span></p>
+<hr />
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Resultados Esperados</span></h3>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Al final de las iteraciones, el algoritmo genético debería haber identificado un conjunto óptimo de políticas públicas que maximicen la </span><span style=" font-size:20pt; font-weight:600;">reducción de desigualdad social</span><span style=" font-size:20pt;"> y mejoren la calidad de vida en la región, teniendo en cuenta las limitaciones presupuestarias y sociales.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt;">Por ejemplo, el algoritmo podría encontrar que una combinación de </span><span style=" font-size:20pt; font-weight:600;">educación</span><span style=" font-size:20pt;">, </span><span style=" font-size:20pt; font-weight:600;">empleo</span><span style=" font-size:20pt;"> y </span><span style=" font-size:20pt; font-weight:600;">transporte público</span><span style=" font-size:20pt;"> es la mejor solución, mientras que otras políticas, como </span><span style=" font-size:20pt; font-weight:600;">salud</span><span style=" font-size:20pt;"> o </span><span style=" font-size:20pt; font-weight:600;">vivienda</span><span style=" font-size:20pt;">, podrían no ser tan efectivas en este caso particular.</span></p>
+<hr />
+<h3 style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:20pt; font-weight:600;">Beneficios de esta Aplicación en Ciencias Sociales 🌍</span></h3>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Optimización de recursos</span>: Los algoritmos genéticos pueden ayudar a los gobiernos a utilizar sus recursos de manera más eficiente, priorizando políticas que realmente tengan un impacto positivo.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Simulación de escenarios</span>: Permite simular diferentes combinaciones de políticas y ver cómo impactan en la sociedad antes de tomar decisiones.</li>
+<li style=" font-size:20pt;" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Toma de decisiones informada</span>: Ayuda a los responsables políticos a tomar decisiones basadas en datos y simulaciones, mejorando la <span style=" font-weight:600;">justicia social</span>.</li></ul></body></html>
+        </body>
+        </html>
+        
+<style>
+.floating-back-button {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.floating-back-button:hover {
+    background-color: #e85a4f;
+}
+.floating-back-button svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+</style>
+
+<a href="../index.html" class="floating-back-button" title="Volver al inicio">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+</a>
+
+<style>
+.floating-back-button {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.floating-back-button:hover {
+    background-color: #e85a4f;
+}
+.floating-back-button svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+</style>
+
+<a href="../index.html" class="floating-back-button" title="Volver al inicio">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+</a>
+
+<style>
+.floating-back-button {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.floating-back-button:hover {
+    background-color: #e85a4f;
+}
+.floating-back-button svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+</style>
+
+<a href="../index.html" class="floating-back-button" title="Volver al inicio">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+</a>
